@@ -68,7 +68,7 @@ public class UserController {
     }
 
     /** User更新処理*/
-    @PostMapping("/update/(id}/")
+    @PostMapping("/update/{id}/")
     public String postUser(@Validated User user, BindingResult res, Model model) {
         if(res.hasErrors()) {
             // エラーあり
